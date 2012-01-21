@@ -28,11 +28,14 @@ gem 'unicorn'
 gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'ruby-debug19', :require => 'ruby-debug', :group => [:development, :test]
 
-gem "capybara", :group => [:development, :test]
 gem 'factory_girl_rails', :group => [:development, :test]
-gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+gem 'rspec-rails', "~> 2.8", :group => [:development, :test]
+gem 'launchy', :group => [:development, :test]
+gem 'database_cleaner', :group => :test
+gem 'capybara', :group => :test
+gem 'capybara-webkit', :group => :test
 
 gem "devise"
 gem "haml", ">= 3.0.0"
@@ -40,4 +43,3 @@ gem "haml-rails"
 gem "compass"
 gem "html5-boilerplate"
 gem "inherited_resources"
-
