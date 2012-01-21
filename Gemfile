@@ -39,4 +39,5 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "compass"
 gem "html5-boilerplate"
+gem "inherited_resources"
 
