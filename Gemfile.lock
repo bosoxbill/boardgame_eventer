@@ -46,9 +46,6 @@ GEM
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 2.0)
       xpath (~> 0.1.4)
-    capybara-webkit (0.8.0)
-      capybara (>= 1.0.0, < 1.2)
-      json
     childprocess (0.3.0)
       ffi (~> 1.0.6)
     chunky_png (1.2.5)
@@ -211,7 +208,6 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   capybara
-  capybara-webkit
   coffee-rails (~> 3.2.1)
   compass
   database_cleaner

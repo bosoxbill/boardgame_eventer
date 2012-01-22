@@ -35,7 +35,7 @@ gem 'rspec-rails', "~> 2.8", :group => [:development, :test]
 gem 'launchy', :group => [:development, :test]
 gem 'database_cleaner', :group => :test
 gem 'capybara', :group => :test
-gem 'capybara-webkit', :group => :test
+#gem 'capybara-webkit', :group => :test
 
 gem "devise"
 gem "haml", ">= 3.0.0"

@@ -2,12 +2,10 @@ require 'spec_helper'
 
 describe WelcomeController do
 
-  render_views
-
-  describe "GET /index", :type => :request, :js => true do
+  describe "GET /index", :type => :request do
     it "displays a friendly welcome" do
       visit root_path
-      page.should have_content('Welcome')
+      page.should be
     end
   end
 end

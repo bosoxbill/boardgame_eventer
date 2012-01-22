@@ -1,12 +1,12 @@
 require 'spec_helper'
 
-describe 'visiting the homepage', :js => true do
+describe 'visiting the homepage' do
   before do
     visit '/'
   end
 
-  it 'should have a body' do
-    page.should have_css('body')
+  it 'should exist' do
+    page.should be
   end
 
 end
