@@ -96,6 +96,7 @@ describe GamesController do
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         Game.any_instance.stub(:save).and_return(false)
+        Game.any_instance.stub(:errors).and_return( base: "Error!")
         post :create, {:game => {}}, valid_session
         response.should render_template("new")
       end
@@ -140,6 +141,7 @@ describe GamesController do
         game = Game.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         Game.any_instance.stub(:save).and_return(false)
+        Game.any_instance.stub(:errors).and_return( base: "Error!")
         put :update, {:id => game.to_param, :game => {}}, valid_session
         response.should render_template("edit")
       end
